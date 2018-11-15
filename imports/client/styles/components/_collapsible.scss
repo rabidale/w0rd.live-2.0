@@ -1,0 +1,25 @@
+.Collapsible {
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  background: white;
+  border: 1px solid #e8e8e8;
+  padding: 1.3rem;
+  max-width: 80rem;
+  min-width: 35rem;
+
+  span {
+    margin: 0 auto;
+  }
+}
+
+.Collapsible__trigger {
+  cursor: pointer;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.Collapsible__trigger.is-open {
+  justify-content: flex-end;;
+}

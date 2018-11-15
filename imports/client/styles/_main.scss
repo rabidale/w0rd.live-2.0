@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: #f2f2f2;
+  color: #555555;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1.6rem;
+}
+
+h1 {
+  font-weight: 300;
+  font-size: 2.4rem;
+}
+
+h2 {
+  font-weight: 300;
+  font-size: 1.2rem;
+}
+
+@import './components/title-bar';
+@import './components/wrapper';
+@import './components/w0rd';
+@import './components/form';
+@import './components/wrapper-w0rd';
+@import './components/collapsible';
+
+//Need to add fourseven scss from atmostphere to get
+// scss to work!
