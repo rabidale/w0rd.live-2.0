@@ -1,8 +1,9 @@
 import React from 'react';
 import Collapsible from 'react-collapsible';
 
+import { CirclePicker } from 'react-color';
 import { W0rds } from './../api/w0rds';
-import Component from './CirclePicker';
+
 
 
 export default class W0rdForm extends React.Component {
@@ -24,20 +25,26 @@ export default class W0rdForm extends React.Component {
     if(input){
       W0rds.insert({
           w0rd: input,
-          textColor: event.target.textColor.value,
-          backgroundColor: event.target.backgroundColor.value,
+          textColor: this.state.textColor,
+          backgroundColor: this.state.backgroundColor,
           w0rdScore: 0
           /*have w0rd font/style here when added*/
       });
       event.target.w0rd.value = '';
-      event.target.textColor.value = '';
-      event.target.backgroundColor.value = '';
     }
   }
 
   handleChange (event) {
     this.setState({ [event.target.name]: event.target.value });
   }
+
+  handleChangeComplete = (color) => {
+    this.setState({ textColor: color.hex });
+  };
+
+  handleChangeCompleteTwo = (color) => {
+    this.setState({ backgroundColor: color.hex });
+  };
 
   render () {
     let previewStyle = {
@@ -56,12 +63,26 @@ export default class W0rdForm extends React.Component {
               <p>{this.state.w0rd}</p>
             </div>
             <form onSubmit={this.handleSubmit.bind(this)}>
-              <label>w0rd</label>
-              <input type="text" name="w0rd" maxLength="18" pattern="^[a-zA-Z][a-zA-Z_\.]{1,20}$" title="letters only, no special characters" onChange={this.handleChange}/>
-              <label>Text Color</label>
-              <input type="text" name="textColor" onChange={this.handleChange}/>
-              <label>Background Color</label>
-              <input type="text" name="backgroundColor" onChange={this.handleChange}/>
+              <div>
+                <label>w0rd</label>
+                <input type="text" name="w0rd" maxLength="18" onChange={this.handleChange}/>
+              </div>
+              <div className="form__color">
+                <label>Text Color</label>
+                <CirclePicker
+                  color={ this.state.textColor }
+                  onChangeComplete={ this.handleChangeComplete }
+                  circleSize={26}
+                />
+              </div>
+              <div className="form__color">
+                <label>Background Color</label>
+                <CirclePicker
+                  color={ this.state.backgroundColor }
+                  onChangeComplete={ this.handleChangeCompleteTwo }
+                  circleSize={26}
+                />
+              </div>
               <button>add w0rd</button>
             </form>
           </div>

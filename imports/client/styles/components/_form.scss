@@ -11,7 +11,7 @@
   input {
     display: flex;
     justify-content: center;
-    min-width: 30rem;
+    min-width: 34rem;
     height: 3rem;
     margin: 10px;
     padding: 1.3rem;
@@ -49,4 +49,9 @@
     align-self: center;
     margin: 0 auto;
   }
+}
+
+.form__color {
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
