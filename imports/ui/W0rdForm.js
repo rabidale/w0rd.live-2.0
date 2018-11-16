@@ -72,7 +72,7 @@ export default class W0rdForm extends React.Component {
                 <CirclePicker
                   color={ this.state.textColor }
                   onChangeComplete={ this.handleChangeComplete }
-                  circleSize={26}
+                  circleSize={20}
                 />
               </div>
               <div className="form__color">
@@ -80,7 +80,7 @@ export default class W0rdForm extends React.Component {
                 <CirclePicker
                   color={ this.state.backgroundColor }
                   onChangeComplete={ this.handleChangeCompleteTwo }
-                  circleSize={26}
+                  circleSize={20}
                 />
               </div>
               <button>add w0rd</button>
