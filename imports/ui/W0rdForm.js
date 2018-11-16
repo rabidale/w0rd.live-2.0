@@ -57,7 +57,7 @@ export default class W0rdForm extends React.Component {
             </div>
             <form onSubmit={this.handleSubmit.bind(this)}>
               <label>w0rd</label>
-              <input type="text" name="w0rd" onChange={this.handleChange}/>
+              <input type="text" name="w0rd" maxLength="18" pattern="^[a-zA-Z][a-zA-Z_\.]{1,20}$" title="letters only, no special characters" onChange={this.handleChange}/>
               <label>Text Color</label>
               <input type="text" name="textColor" onChange={this.handleChange}/>
               <label>Background Color</label>
