@@ -12,7 +12,7 @@ export default class W0rdForm extends React.Component {
     super();
     this.state = {
       w0rd: 'enter a w0rd...',
-      textColor: '#4a4a4a',
+      textColor: '#2f3640',
       backgroundColor: ''
     };
 
@@ -65,7 +65,7 @@ export default class W0rdForm extends React.Component {
             <form onSubmit={this.handleSubmit.bind(this)}>
               <div>
                 <label>w0rd</label>
-                <input type="text" name="w0rd" maxLength="12" onChange={this.handleChange}/>
+                <input type="text" name="w0rd" maxLength="12" onChange={this.handleChange} placeholder="enter a w0rd..."/>
               </div>
               <div className="form__color">
                 <label>Text Color</label>
