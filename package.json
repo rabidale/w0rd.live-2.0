@@ -16,6 +16,7 @@
     "react-color": "^2.14.1",
     "react-dom": "^16.6.1",
     "react-flip-move": "^3.0.3",
+    "react-mason": "^1.1.2",
     "reactcss": "^1.2.3"
   }
 }

@@ -5,10 +5,15 @@
   background: white;
   border: 1px solid #e8e8e8;
   padding: 1.3rem;
-  max-width: 80rem;
-
+  max-width: 100rem;
+  border-radius: 22px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
+  background-color: #6b6b6b;
   span {
     margin: 0 auto;
+  }
+  div {
+    color: #ffffff
   }
 }
 

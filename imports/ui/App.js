@@ -10,7 +10,7 @@ export default class App extends React.Component {
   render() {
     return (
       <div>
-        <TitleBar title={this.props.title} subtitle="Created By Alex Rabideau"/>
+        <TitleBar title={this.props.title} subtitle=""/>
         <div className="wrapper">
           <W0rdForm/>
           <W0rdList w0rds={this.props.w0rds}/> {/*using w0rds from db*/}

@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import FlipMove from 'react-flip-move';
+import Masonry from 'react-mason';
 
 import W0rd from './W0rd';
 
@@ -21,9 +22,9 @@ export default class W0rdList extends React.Component {
   render() {
     return(
       <div>
-        <FlipMove maintainContainerHeight={true} className="wrapper-w0rd">
-          {this.renderW0rds()}
-        </FlipMove>
+          <div className="wrapper-w0rd" >
+            {this.renderW0rds()}
+          </div>
       </div>
     )
   }

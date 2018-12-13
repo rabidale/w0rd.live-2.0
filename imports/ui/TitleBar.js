@@ -4,14 +4,14 @@ import PropTypes from 'prop-types';
 export default class TitleBar extends React.Component {
   renderSubtitle() {
     if (this.props.subtitle) {
-      return <h2>{this.props.subtitle}</h2>
+      return <div>{this.props.subtitle}</div>
     }
   }
   render() {
     return (
       <div className="title-bar">
         <div className="wrapper">
-          <h1>{this.props.title}</h1>
+          <div>{this.props.title}</div>
           {this.renderSubtitle()}
         </div>
       </div>
@@ -25,7 +25,7 @@ TitleBar.propTypes = {
 };
 
 TitleBar.defaultProps = {
-  // title: 'Default Title'
+  // title: 'w0rd.love'
 };
 
 //For PropTypes:

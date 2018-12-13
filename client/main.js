@@ -11,7 +11,7 @@ Meteor.startup(() => {
     let w0rds = W0rds.find().fetch().reverse(); //THIS IS HOW INFO IS GETTING FROM DB
     //if you want to sort by score Section 4 Lecture 36.
     // put {}, {key: 1/-1} inside find() call
-    let title = 'w0rd.live';
+    let title = <div className='title-bar__title'>w0rd<div className='title-bar__circle'></div>live</div>;
     ReactDOM.render(<App title={title} w0rds={w0rds}/>, document.getElementById('app'));
   });
 });

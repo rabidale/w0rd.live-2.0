@@ -7,6 +7,7 @@
   padding: 1.3rem;
   max-width: 80rem;
   min-width: 30rem;
+  background-color: #6b6b6b;
 
   input {
     display: flex;
@@ -19,6 +20,7 @@
     flex-grow: 5;
     padding: 0 1.3rem;
     outline: none;
+    border-radius: 10px;
   }
 
   button {
@@ -38,7 +40,7 @@
   align-content: center;
   font-size: 3.0rem;
   background: white;
-  border: 1px solid #e8e8e8;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
   margin: 1.3rem;
   padding: 1.3rem;
   min-width: 20rem;

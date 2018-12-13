@@ -5,24 +5,18 @@
 
 html {
   font-size: 62.5%;
+  font-family: 'Lato' !important;
 }
 
 body {
   background: #f2f2f2;
   color: #555555;
-  font-family: Helvetica, Arial, sans-serif;
+
   font-size: 1.6rem;
+  font-weight: 900;
 }
 
-h1 {
-  font-weight: 300;
-  font-size: 2.4rem;
-}
 
-h2 {
-  font-weight: 300;
-  font-size: 1.2rem;
-}
 
 /*** Styles added to fix the issue with zoom in on iphone ***/
 /* iPhone < 5: */

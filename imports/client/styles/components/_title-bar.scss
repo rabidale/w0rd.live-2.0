@@ -1,5 +1,20 @@
 .title-bar {
   display: block;
-  background: #2c3e50;
-  color: white;
+  background: #ffffff;
+  color: black;
+  font-family: 'Lato';
+}
+
+.title-bar__circle {
+  background-color: #3d46ff;
+  border-radius: 25px;
+  height: 2.8rem;
+  width: 2.8rem;
+  margin: .2rem;
+  margin-top: .5rem;
+}
+.title-bar__title {
+  display: inline-flex;
+  font-size: 3rem;
+      margin-left: 2rem;
 }
